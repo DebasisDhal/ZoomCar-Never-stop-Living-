@@ -1,6 +1,11 @@
 # ZOOMCAR
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+# app.module.ts (Like before angular-17 without standalone)
+# Image add in public
+# Modal => Nav bar page | doucment.getElementId()
+# Template driven Form
+# 'HttpClientModule' is deprecated => provideHttpClient()
+# Cross origin
+# This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
 
 ## Development server
 
