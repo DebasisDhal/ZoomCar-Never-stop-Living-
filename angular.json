@@ -70,7 +70,11 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+            "proxyConfig": "src/proxy.conf.json"
+        },
           "builder": "@angular-devkit/build-angular:dev-server",
+       
           "configurations": {
             "production": {
               "buildTarget": "ZOOMCAR:build:production"
@@ -79,6 +83,7 @@
               "buildTarget": "ZOOMCAR:build:development"
             }
           },
+        
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
@@ -100,7 +105,10 @@
               }
             ],
             "styles": [
+             "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.css"
+            
+
             ],
             "scripts": []
           }

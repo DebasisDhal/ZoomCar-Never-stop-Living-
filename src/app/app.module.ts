@@ -10,6 +10,7 @@ import { SearchComponent } from './components/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { provideHttpClient } from '@angular/common/http';
+import { CarCardComponent } from './reUsableComponent/car-card/car-card.component';
 
 
 
@@ -20,6 +21,7 @@ import { provideHttpClient } from '@angular/common/http';
     CarsComponent,
     HomeComponent,
     SearchComponent,
+    CarCardComponent,
     
   ],
   imports: [

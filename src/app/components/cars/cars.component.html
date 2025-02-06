@@ -1,1 +1,16 @@
-<p>cars works!</p>
+<div class="row">
+    <div class="col-12 text-end">
+        <button class="btn btn-success" (click)="getCars()">
+            Add New
+        </button>
+    </div>
+</div>
+
+<div class="car-list-home-container">
+    <div class="row car-list-home">
+        <div class="col-3" *ngFor="let car of carLists">
+    <app-car-card [carData]="car"></app-car-card>
+</div>
+    </div>
+</div>
+

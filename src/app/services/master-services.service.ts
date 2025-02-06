@@ -11,11 +11,17 @@ export class MasterServicesService {
   constructor(private http:HttpClient) { 
     
   }
- private api_url ="https://freeapi.miniprojectideas.com/api/ZoomCar"
+apiEndPoint: string ="/api/ZoomCar/"
 
- sendData(obj:any):Observable<any>{
-   return this.http.post(this.api_url+'/AddNewUser',obj);
+ registerUser(obj:any):Observable<any>{
+   return this.http.post(this.apiEndPoint+'AddNewUser',obj);
+ }
+ 
+ loginUser(obj:any){
+  return this.http.post(this.apiEndPoint+'Login',obj);
  }
 
-
+ getCarsByOwnerId(userId:any){
+  return this.http.get(this.apiEndPoint+'GetAllCarsByOwnerId?id='+userId)
+  }
 }

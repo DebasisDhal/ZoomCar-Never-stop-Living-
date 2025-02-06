@@ -12,10 +12,17 @@
 
 
       </ul>
-      <form class="d-flex">
-        <button class="btn btn-outline-primary round-button mx-2" type="button">Login</button>
+    
+      <form class="d-flex" *ngIf="loggedUserObj">
+        <button class="btn btn-outline-primary round-button mx-2" type="button" (click)="loginModal()">{{loggedUserObj.emailId}}</button>
+        <button class="btn btn-danger round-button" type="button" (click)="logOff()">LogOff</button>
+      </form>
+
+      <form class="d-flex" *ngIf="!loggedUserObj">
+        <button class="btn btn-outline-primary round-button mx-2" type="button" (click)="loginModal()">Login</button>
         <button class="btn btn-success round-button" type="button" (click)="openModal()">Register</button>
       </form>
+  
     </div>
   </div>
 </nav>
@@ -52,7 +59,8 @@
             <label>WhoAre you</label>
             <select class="form-select" name="userRole" [(ngModel)]="formObj.userRole">
               <option>Select</option>
-              <option>Selects</option>
+              <option>CarOwners</option>
+              <option>Customer</option>
             </select>
           </div>
           <div class="col-6">
@@ -62,10 +70,37 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" (click)="onSubmit()">Register</button>
-        <button type="button" class="btn btn-warning" (click)="onReset()">Clear</button>
+        
         <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="closeModal()">Close</button>
-        {{formObj|json}}
+        <button type="button" class="btn btn-warning" (click)="onReset()">Clear</button>
+        <button type="button" class="btn btn-primary" (click)="onSubmit()">Register</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="myModalLogin" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Registation</h5>
+
+      </div>
+      <div class="modal-body">
+        <label>email</label>
+        <input class="form-control" name="emailId" [(ngModel)]="loginObj.emailId">
+        <label>Password</label>
+        <input type="password" name="password" [(ngModel)]="loginObj.password" class="form-control">
+       
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="closeLoginModal()">Close</button>
+        <button type="button" class="btn btn-warning" (click)="onClear()">Clear</button>
+        <button type="button" class="btn btn-primary" (click)="onLogin()">Login</button>
+       
       </div>
     </div>
   </div>
