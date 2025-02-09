@@ -8,7 +8,8 @@
 # Cross origin
 # Local storage data 
 # Login and Logout data as per condition show
-# Reusable copmponent create 'cars-card' send to car as child help of @Input
+# Reusable copmponent create 'cars-card' send to car,Home(PopularCar) as child help of @Input
+
 
 # This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
 

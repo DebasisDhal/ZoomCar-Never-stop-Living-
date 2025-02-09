@@ -24,4 +24,13 @@ apiEndPoint: string ="/api/ZoomCar/"
  getCarsByOwnerId(userId:any){
   return this.http.get(this.apiEndPoint+'GetAllCarsByOwnerId?id='+userId)
   }
+  getLocation(){
+    return this.http.get(this.apiEndPoint+'GetAllLocations');
+  }
+  addCar(obj:any){
+    return this.http.post(this.apiEndPoint+"addNewCar",obj);
+  }
+  getAllCars(){
+    return this.http.get(this.apiEndPoint+'GetAllCars');
+  }
 }
