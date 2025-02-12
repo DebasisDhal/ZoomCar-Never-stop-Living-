@@ -1,5 +1,15 @@
 # ZOOMCAR
-![alt text](image.png)
+
+![image](https://github.com/user-attachments/assets/cc16d93d-8af3-4869-b762-887fedb0bdd5)
+![image](https://github.com/user-attachments/assets/17a7e49f-0519-4277-bf9a-9bda8ec4d847)
+![image](https://github.com/user-attachments/assets/ab314f89-e3b3-4575-95ac-00cf06548987)
+![image](https://github.com/user-attachments/assets/ce74502b-d784-4f98-9721-7da8f72880d3)
+![image](https://github.com/user-attachments/assets/b4db9e19-8140-4726-b86e-0efcf709e863)
+![Uploading image.png…]()
+
+
+
+
 # app.module.ts (Like before angular-17 without standalone)
 # Image add in public
 # Modal => Nav bar page | doucment.getElementId()
