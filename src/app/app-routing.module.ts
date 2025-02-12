@@ -17,11 +17,11 @@ const routes: Routes = [
   },
 
   {
-    path:'search',
+    path:'search/:locationId',
     component:SearchComponent
   },
   {
-    path:'booking',
+    path:'booking/:locationId/:carId',
     component:BookingComponent
   },
   {

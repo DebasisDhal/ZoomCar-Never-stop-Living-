@@ -4,18 +4,18 @@
     <!-- <img src="https://www.zoomcar.com/img/bg-desktop.png" alt=""> -->
     <form id="form">
        
-        <select name="" class="form-control" id="start">
+        <select  class="form-control" id="start" name="pickupLocation" [(ngModel)]="pickupLocation">
             <option value="">Pick Up Cites Airport,Hotel</option>
-            <option  *ngFor="let item of locations" [value]="item.locationId">{{item.title}}
+            <option  *ngFor="let item of locations" [value]="item.locationId" >{{item.title}}
             </option>
         </select>
-        <select name="" class="form-control" id="start">
+        <select name="" class="form-control" id="start" name="toLocation" [(ngModel)]="toLocation">
             <option value="">Drop Off Cites Airport,Hotel</option>
-            <option  *ngFor="let item of locations" [value]="item.locationId">{{item.title}}
+            <option  *ngFor="let item of locations" [value]="item.locationId" >{{item.title}}
             </option>
         </select> 
         <!-- <p id="redDot"></p> -->
-        <div><button id="primaryButton" type="submit">FIND CARS</button></div>
+        <div><button id="primaryButton" type="submit" (click)="navigateToSearchPage()">FIND CARS</button></div>
     </form>
     <!-- <a href="./Filter/filter.html"></a> -->
     <!-- </div> -->

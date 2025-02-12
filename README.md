@@ -1,5 +1,5 @@
 # ZOOMCAR
-
+![alt text](image.png)
 # app.module.ts (Like before angular-17 without standalone)
 # Image add in public
 # Modal => Nav bar page | doucment.getElementId()
@@ -9,6 +9,9 @@
 # Local storage data 
 # Login and Logout data as per condition show
 # Reusable copmponent create 'cars-card' send to car,Home(PopularCar) as child help of @Input
+# pass location id in home page help of query parameter and recive in search page
+# as per location id showing data in location also you can choose another location also that feture added help of (change)
+#  <select> <option></option> </select> plce hoder no show solve help of declare variable properly fromLocation:String = '';
 
 
 # This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.

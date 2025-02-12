@@ -33,4 +33,16 @@ apiEndPoint: string ="/api/ZoomCar/"
   getAllCars(){
     return this.http.get(this.apiEndPoint+'GetAllCars');
   }
+
+  getAllCarsByLocation(id:String){
+    return this.http.get(this.apiEndPoint+'GetAllCarsByLocation?id='+id)
+  }
+ 
+  getCarById(id:any){
+    return this.http.get(this.apiEndPoint+'GetCarById?id='+id)
+  }
+
+  createNewBooking(obj:any){
+    return this.http.post(this.apiEndPoint+'createNewBooking',obj)
+  }
 }
