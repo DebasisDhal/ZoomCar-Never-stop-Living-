@@ -5,9 +5,7 @@
 ![image](https://github.com/user-attachments/assets/ab314f89-e3b3-4575-95ac-00cf06548987)
 ![image](https://github.com/user-attachments/assets/ce74502b-d784-4f98-9721-7da8f72880d3)
 ![image](https://github.com/user-attachments/assets/b4db9e19-8140-4726-b86e-0efcf709e863)
-![Uploading image.png…]()
-
-
+![image](https://github.com/user-attachments/assets/ac5a58dc-7c84-4e53-92c7-224a145bece4)
 
 
 # app.module.ts (Like before angular-17 without standalone)
